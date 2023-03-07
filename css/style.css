@@ -8,13 +8,15 @@ html {
 
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 1);
   position: fixed;
-  top: 5px;
+  top: 0px;
+  left: 0px;
   width: 100%;
+  z-index: 999;
 }
 
 nav li {
@@ -33,27 +35,32 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #5e5e5e;
+  background-color: #a8a8a8;
+  transition: .4s;
 }
 
-main {
-    position: fixed;
-    top: 20%;
-    right: 10%;
+
+div {
+  display: block;
+}
+
+.content {
+    position: relative;
+    margin: 10px;
+    top: 100px;
+    left: 10%;
     width: 80%;
     border: 3px solid #00000031;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-main h1 {
+.content h1 {
   text-align: center;
   font-family: Montserrat, serif
 
 }
 
-main p {
+.content p {
   text-align: center;
   font-family: Montserrat, serif
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
