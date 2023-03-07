@@ -4,43 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>My Personal Website</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+type="text/javascript"></script>
+
+<style type="text/css">
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+#feedControl {
+margin-top : 10px;
+margin-left: auto;
+margin-right: auto;
+width : 440px;
+font-size: 12px;
+color: #9CADD0;
+}
+</style>
+<script type="text/javascript">
+function load() {
+var feed ="http://feeds.bbci.co.uk/news/world/rss.xml";
+new GFdynamicFeedControl(feed, "feedControl");
+
+}
+google.load("feeds", "1");
+google.setOnLoadCallback(load);
+</script>
+
 </head>
 <body>
-    <div class="banner">
-        Banner
-    </div>
-    <div class="content">
-        <div class="card">Card 1
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac placerat velit. Aenean quis dolor eget tortor consectetur mattis ac at ex. Duis vel hendrerit lectus. Pellentesque ultrices lectus diam, consequat varius neque laoreet non. Sed fringilla nisi id egestas rutrum. Phasellus suscipit, libero sit amet placerat aliquet, erat turpis pharetra libero, vitae condimentum sem sem sed ex. Sed a felis sed ex egestas ultricies. Quisque pretium nibh nec mi feugiat fermentum. Morbi finibus lectus at pretium ornare. In nisl ex, vehicula non consequat ac, ultrices vitae odio. Maecenas at quam id nisi volutpat convallis.</div>
+    <div class="wrapper">
+        <div class="banner"> <div class="name"> Michael Plumlee</div>
+            <div class="bannerpic"><img class="profilepic" src="photos/274737778_5393506390677720_1177068560190872199_n.jpg" alt="profile picture"></div>
+            <div class="navigation">
+                <a class="navlink" href="index.html">Home</a>
+                <a class="navlink" href="">About</a>
+                <a class="navlink" href="">Projects</a>
+                <a class="navlink" href="">Contact</a>
+                
+            </div>
         </div>
-        <div class="card">Card 2
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac placerat velit. Aenean quis dolor eget tortor consectetur mattis ac at ex. Duis vel hendrerit lectus. Pellentesque ultrices lectus diam, consequat varius neque laoreet non. Sed fringilla nisi id egestas rutrum. Phasellus suscipit, libero sit amet placerat aliquet, erat turpis pharetra libero, vitae condimentum sem sem sed ex. Sed a felis sed ex egestas ultricies. Quisque pretium nibh nec mi feugiat fermentum. Morbi finibus lectus at pretium ornare. In nisl ex, vehicula non consequat ac, ultrices vitae odio. Maecenas at quam id nisi volutpat convallis.</div>
-
-        </div>
-        <div class="card">Card 3
-             <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac placerat velit. Aenean quis dolor eget tortor consectetur mattis ac at ex. Duis vel hendrerit lectus. Pellentesque ultrices lectus diam, consequat varius neque laoreet non. Sed fringilla nisi id egestas rutrum. Phasellus suscipit, libero sit amet placerat aliquet, erat turpis pharetra libero, vitae condimentum sem sem sed ex. Sed a felis sed ex egestas ultricies. Quisque pretium nibh nec mi feugiat fermentum. Morbi finibus lectus at pretium ornare. In nisl ex, vehicula non consequat ac, ultrices vitae odio. Maecenas at quam id nisi volutpat convallis.</div>
-
-        </div>
-        <div class="card">Card 4
-             <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac placerat velit. Aenean quis dolor eget tortor consectetur mattis ac at ex. Duis vel hendrerit lectus. Pellentesque ultrices lectus diam, consequat varius neque laoreet non. Sed fringilla nisi id egestas rutrum. Phasellus suscipit, libero sit amet placerat aliquet, erat turpis pharetra libero, vitae condimentum sem sem sed ex. Sed a felis sed ex egestas ultricies. Quisque pretium nibh nec mi feugiat fermentum. Morbi finibus lectus at pretium ornare. In nisl ex, vehicula non consequat ac, ultrices vitae odio. Maecenas at quam id nisi volutpat convallis.</div>
-
-        </div>
-        <div class="card">Card 5
-             <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac placerat velit. Aenean quis dolor eget tortor consectetur mattis ac at ex. Duis vel hendrerit lectus. Pellentesque ultrices lectus diam, consequat varius neque laoreet non. Sed fringilla nisi id egestas rutrum. Phasellus suscipit, libero sit amet placerat aliquet, erat turpis pharetra libero, vitae condimentum sem sem sed ex. Sed a felis sed ex egestas ultricies. Quisque pretium nibh nec mi feugiat fermentum. Morbi finibus lectus at pretium ornare. In nisl ex, vehicula non consequat ac, ultrices vitae odio. Maecenas at quam id nisi volutpat convallis.</div>
-
-        </div>
-        <div class="card">Card 6
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac placerat velit. Aenean quis dolor eget tortor consectetur mattis ac at ex. Duis vel hendrerit lectus. Pellentesque ultrices lectus diam, consequat varius neque laoreet non. Sed fringilla nisi id egestas rutrum. Phasellus suscipit, libero sit amet placerat aliquet, erat turpis pharetra libero, vitae condimentum sem sem sed ex. Sed a felis sed ex egestas ultricies. Quisque pretium nibh nec mi feugiat fermentum. Morbi finibus lectus at pretium ornare. In nisl ex, vehicula non consequat ac, ultrices vitae odio. Maecenas at quam id nisi volutpat convallis.</div>
-
-        </div>
-        <div class="card">Card 7
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac placerat velit. Aenean quis dolor eget tortor consectetur mattis ac at ex. Duis vel hendrerit lectus. Pellentesque ultrices lectus diam, consequat varius neque laoreet non. Sed fringilla nisi id egestas rutrum. Phasellus suscipit, libero sit amet placerat aliquet, erat turpis pharetra libero, vitae condimentum sem sem sed ex. Sed a felis sed ex egestas ultricies. Quisque pretium nibh nec mi feugiat fermentum. Morbi finibus lectus at pretium ornare. In nisl ex, vehicula non consequat ac, ultrices vitae odio. Maecenas at quam id nisi volutpat convallis.</div>
-
-        </div>
-        
-
+    <div id="body">
+        <div id="feedControl">Loading...</div>
+            </div>
     </div>
 </body>
 </html>
